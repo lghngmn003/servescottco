@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <defs>
+    <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#81B29A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6a9a82;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Stylized Scott County outline with river on top -->
+  <g transform="translate(5, 5)">
+    <!-- County shape with wavy river top edge -->
+    <path d="M0 12
+             Q 5 8, 10 12
+             Q 15 16, 20 11
+             Q 25 6, 30 10
+             Q 33 13, 35 10
+             L 35 35
+             L 0 35
+             Z"
+          fill="#E07A5F"
+          opacity="0.9"/>
+
+    <!-- River accent line -->
+    <path d="M0 12
+             Q 5 8, 10 12
+             Q 15 16, 20 11
+             Q 25 6, 30 10
+             Q 33 13, 35 10"
+          fill="none"
+          stroke="url(#riverGradient)"
+          stroke-width="3"
+          stroke-linecap="round"/>
+  </g>
+
+  <!-- ServeScott text -->
+  <text x="50" y="33"
+        font-family="Inter, sans-serif"
+        font-size="24"
+        font-weight="700"
+        fill="#3D405B">
+    <tspan fill="#E07A5F">Serve</tspan><tspan fill="#3D405B">Scott</tspan>
+  </text>
+</svg>
